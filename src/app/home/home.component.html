@@ -1,3 +1,24 @@
-
-    <div id="particles-js">
+<section class="container">
+    <h1>Welcome!!</h1>
+    <button (click)="openWinBox()">Click me</button>
+    <button (click)="closeWinBox()">Close</button>
+</section>
+<!-- <div class="scene">
+    <div class="cube" [ngClass]="currentClass">
+      <div class=" cube__face cube__face--front"></div>
+      <div class="cube__face cube__face--back">Dev</div>
+      <div class="cube__face cube__face--right"></div>
+      <div class="cube__face cube__face--left">PM</div>
+      <div class="cube__face cube__face--top">Tester</div>
+      <div class="cube__face cube__face--bottom">FsDev</div>
     </div>
+</div> -->
+
+<div style="display: none;">
+    <div id="controls">
+        <input type='text' [(ngModel)]="this.globalService.currentValue">
+        <p>{{this.globalService.currentValue}}</p>
+        <button onclick="buttons.setValue()">Click here</button>
+    </div>
+</div>
+  

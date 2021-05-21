@@ -21,10 +21,14 @@
       "dom"
     ]
   },
+  "include": [
+    "src", 
+  ],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "allowJs": true
 }

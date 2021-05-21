@@ -1,0 +1,38 @@
+// #particles-js{
+//   width: 100%;
+//   height: 100%;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   background-color: #78066D;
+//   z-index: 9;
+// }
+
+.wholeContainer{
+    z-index: 999999999999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+  #particles-js,
+  #over {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  background-color: #78066D;
+
+  }
+  #over {
+    z-index: 10;
+  }

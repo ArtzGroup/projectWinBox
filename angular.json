@@ -31,10 +31,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/config/winbox.min.css"
             ],
             "scripts": [
-              "node_modules/particles.js/particles.js"
+              "node_modules/particles.js/particles.js",
+              "src/assets/config/winbox.min.js"
             ]
           },
           "configurations": {

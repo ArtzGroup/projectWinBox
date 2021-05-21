@@ -5,5 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class GlobalService {
   currentValue: string = '';
+  username: string = '';
+  password: string = 'password';
   constructor() { }
 }

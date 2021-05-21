@@ -1,1 +1,9 @@
-<p>{{this.globalService.currentValue}}</p>
+<section class="container">
+    <h2>Hello {{this.globalService.username}}</h2>
+    <p>How are you?</p>
+    <small>OMG!! I got your password. &#128552; &#x1F628;</small>
+    <a [routerLink]="[ '/home' ]" title="Don't worry!! It's not saved anywhere">{{this.globalService.password}}</a>
+    <!-- <button>Watch a movie</button>
+    <button>Listen to Songs</button>
+    <button>Waste your time</button> -->
+</section>

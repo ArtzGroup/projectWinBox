@@ -1,7 +1,7 @@
 <section class="container">
     <h1>Welcome!!</h1>
-    <button (click)="openWinBox()">Click me</button>
-    <button (click)="closeWinBox()">Close</button>
+    <button (click)="openWinBox()">Register</button>
+    <!-- <button (click)="closeWinBox()">Close</button> -->
 </section>
 <!-- <div class="scene">
     <div class="cube" [ngClass]="currentClass">
@@ -16,9 +16,21 @@
 
 <div style="display: none;">
     <div id="controls">
-        <input type='text' [(ngModel)]="this.globalService.currentValue">
-        <p>{{this.globalService.currentValue}}</p>
-        <button onclick="buttons.setValue()">Click here</button>
+        <form #signupForm="ngForm" (ngSubmit)="registerUser(signupForm)">
+            <div class="box">
+                <h1>Dashboard</h1>
+            <label for="username">Username</label>
+            <input class="email" type="text" name="username" id="username" ngModel>
+          
+            <label for="password">Password</label>
+            <input class="email" type="password" name="password" id="password" ngModel>
+          
+            <button class="btn" type="submit">Sign Up</button>
+
+            </div>
+          </form>
+        <!-- <p>{{this.globalService.currentValue}}</p>
+        <button onclick="buttons.setValue()">Click here</button> -->
     </div>
 </div>
   
